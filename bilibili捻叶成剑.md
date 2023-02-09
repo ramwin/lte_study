@@ -1,5 +1,5 @@
 # 基础信息
-[bilibili网址](https://space.bilibili.com/416296286/video)
+这里的资料是我学习[bilibili 捻叶成剑](https://space.bilibili.com/416296286/video) UP主的笔记
 
 # MIMO
 实现分类:
@@ -31,3 +31,10 @@ RANK=2, 才能发挥空间复用效果
     * 复数 z=a+bj, b是频率变化幅度.z的长度是幅度变化程度
     * 三元: {-1, 0, 1}
     * 短序列: 一般选择4个三元复数. 所以一共有最多 (3*3*3)**4 = 6561个用户码
+
+# [5G参数CQI与MCS/TBS](https://www.bilibili.com/video/BV1684y1B7pU/)
+CQI属于CSI
+* CSI: Channel Status Information 信道状态信息
+    * CQI: Channel Quality Information 越大代表下行信号质量越好
+    0 代表手机完全收不到基站的信号
+    * 其他 PMI, CRI, SSBRI, LI, RI
