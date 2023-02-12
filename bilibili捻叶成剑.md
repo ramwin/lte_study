@@ -1,6 +1,13 @@
 # 基础信息
 这里的资料是我学习[bilibili 捻叶成剑](https://space.bilibili.com/416296286/video) UP主的笔记
 
+# [[小白也能看懂]信号质量评估RSRP和sinr，含大尺度衰落和小尺度衰落，路径损耗，多径效应等](https://www.bilibili.com/video/BV1ca4y1v78n/)
+
+## Sinr
+信号与干扰加噪声比
+Sinr = Signal / (Interference + Noise) 约等于 服务小区RSRP/(邻接小区RSRP和+噪声). 大部分情况也不考虑噪声 所以Sinr = Signal / 邻区小区RSRP和
+一般在-10~30之间 一般认为30~20是干扰小, 0~20干扰一般. `<0`认为干扰很大
+
 # MIMO
 实现分类:
     * 空间分集: 加强信号
