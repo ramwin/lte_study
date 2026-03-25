@@ -1,12 +1,17 @@
-lte_study
-=========
+# lte_study
 
-LTE心得总结：
 
-在工作中对3GPP LTE协议做了一些总结，放在这里与大家一起交流分享！
+# 5G/NR
 
-如果大家有什么意见或建议，可以给我发邮件给我，或在我的LTE博客中提出来，大家一起交流，共同进步。
+## 空口协议
+### SSB
+每20ms发送一次
 
-eMail：wjhgh04@gmail.com
+* PSS Primary Synchronization Signal，主同步信号
+第一个符号发送, 占用127个子载波/10.6个RB, 占用1个符号. 一共发送127比特. 这127比特只有3种状态,根据小区的ID(PCI)对3取模.   
+5G一共1008个PCI
 
-blog: http://blog.sina.com.cn/ilte
+```
+N_cell_ID = 3 x N(1)_ID + N(2)_ID
+N(1)_ID {0,1,..,335}, N(2)_ID {0, 1, 2}
+```
