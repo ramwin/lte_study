@@ -6,7 +6,8 @@
 ## 空口协议
 ### SSB
 每20ms发送一次
-[kimi的教程](https://www.kimi.com/share/19d255ae-7d32-8768-8000-00001206380f)
+[kimi的教程](https://www.kimi.com/share/19d255ae-7d32-8768-8000-00001206380f)  
+所以PSS和SSS都是固定的值,确定下来后,不需要L2参与, L1就能直接发送.  
 
 * PSS Primary Synchronization Signal，主同步信号
 第一个符号发送, 占用127个子载波/10.6个RB, 占用1个符号. 一共发送127比特. 这127比特只有3种状态,根据小区的ID(PCI)对3取模.   
